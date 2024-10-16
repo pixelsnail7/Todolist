@@ -1,0 +1,117 @@
+:root {
+    font-size: 16px;
+    --body-bg: #e6e6e6;
+    --main-bg: #ffffff;
+    --prime-bg: #e6e6e6;
+    --main-c: gold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--body-bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    border: none;
+    border-radius: 0.5rem;
+    max-width: 40rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--main-bg);
+}
+
+#todoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+#addBox {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    gap: 0.5rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.box {
+    background-color: var(--prime-bg);
+}
+
+#addInput {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#addInput:focus-visible {
+    outline: 2px solid var(--main-c);
+}
+
+#addInput:focus {
+    outline: 2px solid var(--main-c);
+}
+
+#addBtn {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: var(--main-c);
+}
+
+#taskBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: calc(100% - 3rem);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.taskBoxes{
+    display: grid;
+    align-items: center;
+    grid-template-columns:2rem 1fr 2rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-c);
+    font-size: 1.2rem;
+}
+
+.endTask {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}   
+
+.delTask {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
